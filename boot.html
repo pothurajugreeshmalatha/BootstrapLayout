@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap Blog</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom styles */
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1200x400/?blog');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,.1);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MyBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Welcome to My Blog</h1>
+            <p class="lead">Discover amazing content about technology, travel, and more</p>
+        </div>
+    </div>
+
+    <!-- Blog Posts -->
+    <div class="container mb-5">
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="/home/rgukt/Desktop/tech.jpeg" class="card-img-top" alt="Tech">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Tech Trends</h5>
+                        <p class="card-text">Explore the newest technologies shaping our future and how they impact different industries.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 15, 2023
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="/home/rgukt/Desktop/travel.jpeg" class="card-img-top" alt="Travel">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Travel Destinations</h5>
+                        <p class="card-text">Discover hidden gems and must-visit locations around the world for your next adventure.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on February 2, 2023
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="/home/rgukt/Desktop/food.jpeg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Healthy Eating Habits</h5>
+                        <p class="card-text">Learn how to maintain a balanced diet with these simple but effective nutrition tips.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on March 10, 2023
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?fitness" class="card-img-top" alt="Fitness">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Workout Routine</h5>
+                        <p class="card-text">Stay fit with these effective exercises you can do at home without any equipment.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on April 5, 2023
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?books" class="card-img-top" alt="Books">
+                    <div class="card-body">
+                        <h5 class="card-title">Must-Read Books This Year</h5>
+                        <p class="card-text">Our curated list of books that will expand your mind and entertain you.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on May 20, 2023
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?business" class="card-img-top" alt="Business">
+                    <div class="card-body">
+                        <h5 class="card-title">Startup Success Stories</h5>
+                        <p class="card-text">Learn from entrepreneurs who turned their ideas into successful businesses.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on June 15, 2023
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="mb-4">
+                <a href="#" class="text-dark mx-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#" class="text-dark mx-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-dark mx-3"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="#" class="text-dark mx-3"><i class="fab fa-pinterest-p fa-lg"></i></a>
+            </div>
+            <p class="mb-2">&copy; 2023 MyBlog. All rights reserved.</p>
+            <div class="text-muted small">
+                <a href="#" class="text-decoration-none text-muted mx-2">Privacy Policy</a>
+                <a href="#" class="text-decoration-none text-muted mx-2">Terms of Service</a>
+                <a href="#" class="text-decoration-none text-muted mx-2">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
